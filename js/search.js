@@ -17,11 +17,7 @@ const character = search.value;
       })
       .then(response => response.json(), {
       })
-      .then(cards => {
-
-        if (cards.data.results == 0) {
-          return
-        }        
+      .then(cards => {       
         clearCards();        
         createCads(cards);    
       })
